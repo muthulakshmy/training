@@ -1,0 +1,130 @@
+h1{
+    color: rgb(56, 6, 102);
+}
+#css{
+    background: url(bgwhite.webp);
+}
+#container{
+    background-color: rgb(175, 168, 169);
+    padding: 20px;
+    margin: 20px 30px 40px 20px ;
+}
+#container p{
+    font-family: sans-serif;
+}
+#list{
+    font-style: oblique;
+    color: rgb(105, 5, 97);
+}
+.para1 , .para3{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(3, 55, 85);
+    outline-style: double;
+
+}
+.para1+p{
+    color: rgb(1, 114, 95);
+}
+
+ul>li{
+    list-style: circle;
+    
+}
+input[type="text"]{
+    border-top-color: lightseagreen;
+    border-bottom-color: darkviolet;
+    border-right-color: rgb(13, 129, 129);
+    border-left-color: rgb(115, 228, 22);
+    margin-left: 40px;
+
+}
+input[type="submit"]{
+    border-color: limegreen;
+    width: 100px;
+    padding:5px;
+    margin-left: 30px;
+    color: darkolivegreen;
+}
+input[type="email"]{
+    margin-left: 35px;
+    border-top-color: lightseagreen;
+    border-bottom-color: darkviolet;
+    border-right-color: rgb(10, 126, 126);
+    border-left-color: rgb(115, 228, 22);
+}
+input[type="number"]{
+    margin-left: 50px;
+    border-top-color: lightseagreen;
+    border-bottom-color: darkviolet;
+    border-right-color: rgb(10, 126, 126);
+    border-left-color: rgb(115, 228, 22);
+
+}
+
+input[type="radio"]{
+    margin-left: 40px;
+    margin-right: 5px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-top-color: lightseagreen;
+    border-bottom-color: darkviolet;
+    border-right-color: rgb(10, 126, 126);
+    border-left-color: rgb(115, 228, 22);
+}
+#dept{
+    margin-left: 45px;
+    padding: 5px;
+    width:180px;
+}
+.des{
+   
+    padding: 5px;
+    width:170px;
+}
+input[type="reset"]{
+    border-color: limegreen;
+    width: 100px;
+    padding:5px;
+    color: darkgreen;
+}
+#name,#age,#email{
+    color: rgb(9, 126, 89);
+}
+#food,#dept{
+    color: rgb(54, 10, 95);
+}
+.dept{
+    color: rgb(5, 112, 98) ;
+}
+#des{
+    color: rgb(6, 87, 73);
+}
+.table{
+    border-color: rgb(5, 34, 88);
+    color: rgb(77, 5, 148);
+    background-color: rgb(166, 240, 240);
+    width: 430px;  
+    
+    height : 300px;   
+}
+
+th:nth-child(even){
+    background-color: rgb(173, 226, 247);
+}
+
+tr:nth-child(3){
+    background-color: antiquewhite;
+}
+tr:nth-child(5){
+    background-color: antiquewhite;
+}
+
+#form{
+    background-color: rgb(202, 211, 208);
+    width: 350px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline-style: dotted;
+}
