@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Drag n Drop</title>
+        <style>
+            .drag-container{
+                display: grid;
+            }
+            .dragbox{
+                width: 100px;
+                height: 100px;
+                border: 5px solid rgb(30, 167, 172);
+                text-align: center;
+                padding: 10px;
+                margin-right: 20px;
+                cursor: move;
+            }
+           
+        </style>
+    
+    <script>
+        function allowDrop(event){
+            event.preventDefault();
+        }
+        function drag(event){
+            event.dataTransfer.setData("text",event.target.id);
+
+        }
+        function drop(event){
+            event.preventDefault();
+            var data=event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+    </head>
+    <body>
+        <h1>Drag n Drop</h1>
+        <div class="drag-container">
+            <div id="dragbox" class="dragbox" draggable="true" ondragstart="drag(event)">
+                <span style="color:rgb(102, 33, 212)">Drag Box</span>
+            </div>
+             
+            </div>
+        <div id="dropbox" class="dragbox" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+          <span style="color:blueviolet">Drop Box</span>
+            <p>drag here</p>
+        </div>
+        </div>
+    </body>
+</html>
