@@ -1,130 +1,133 @@
 .user_review {
-  margin: 10px;
-}
-.rating {
-  display: flex;
-  padding: 10px;
-}
-h1 {
-  font-size: 45px;
-  font-style: italic;
-  color: darkmagenta;
-  margin-top: 10px;
-}
-#product_description {
-  font-size: 20px;
-  color: #e26af7;
-}
-
-.rating__users--review1,
-.rating__users--review2,
-.rating__users--review3 {
-  border: 2px solid #e26af7;
-  border-radius: 5%;
-  background-color: #f2c5fa;
-  padding: 1px;
-  margin: 5px;
-  color: rgb(170, 105, 231);
-  font-weight: bold;
-  display: flex;
-  margin-left: 100px;
-  align-items: center;
-  gap: 10px;
-}
-
-.rating__users--review2 {
-  position: relative;
-  top: 2px;
-  left: 70px;
-}
-.rating__users--review3 {
-  position: relative;
-  top: 2px;
-  left: 140px;
-}
-.checked {
-  color: orange;
-}
-
-.buyers {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-}
-
-h4 {
-  color: #f3f2f5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: -10px;
-  margin-top: 10px;
-}
-#header1 {
-  display: flex;
-  margin: 1px;
-}
-.buyers__person1 {
-  grid-row: 1 / span 2;
-}
-
-.buyers__person2 {
-  grid-row: 2 / span 3;
-}
-.buyers__person3 {
-  grid-row: 2 / span 4;
-  margin-bottom: 20px;
-  position: relative;
-  top: 100px;
-}
-.buyers__person1,
-.buyers__person2,
-.buyers__person3 {
-  border: 1px solid black;
-  border-radius: 3%;
-  background-color: #8d56e6;
-  margin: 20px;
-  padding: 20px;
-  width: 300px;
-}
-.buyers__person1--review,
-.buyers__person2--review,
-.buyers__person3--review {
-  opacity: 50%;
-  color: #f3f2f5;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-  border-color: black;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-@media screen and (max-width: 600px) {
-  body {
-    background-color: rgb(153, 153, 231);
+   
+    margin-left: 100px;
   }
-  .rating__products {
-    display: flex;
-    flex-direction: column;
-  }
-  .rating__users--review1 {
-    display: flex;
-    flex-direction: row;
-  }
-  .rating__users--review2 {
-    display: flex;
-    flex-direction: row;
-  }
-  .rating__users--review3 {
-    display: flex;
-    flex-direction: row;
-  }
+  
   .rating {
     display: flex;
-    flex-direction: column;
+    padding: 70px;
+    margin 10px 120;
+    margin-bottom: -20px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: -40px;
   }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    color: darkmagenta;
+    margin-bottom: -30px;
+  }
+  #product_description {
+    font-size: 13px;
+    padding-top:30px;
+    color: #918594;
+  }
+  .rating__users{
+    margin-left: 50px;
+    border-radius: 5px;
+  }
+  
+  .rating__users--review1,
+  .rating__users--review2,
+  .rating__users--review3 {
+    border: 2px solid #f5f1f6;
+    border-radius: 5%;
+    background-color: #f7edf9;
+    padding: 1px 5px;
+    margin: 5px;
+    color: rgb(170, 105, 231);
+    font-weight: bold;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .rating__users--review2 {
+    position: relative;
+    top: 2px;
+    left: 70px;
+  }
+  .rating__users--review3 {
+    position: relative;
+    top: 2px;
+    left: 140px;
+  }
+  .checked {
+    color: orange;
+  }
+  
   .buyers {
     display: flex;
-    flex-direction: column;
+    padding-top: 2px;
+    margin-left: 45px;
+    padding-right: 200px;
+    width:80%%;
+    
   }
-}
+    
+  
+  
+  h4 {
+    color: #f3f2f5
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -10px;
+    margin-top: 10px;
+  }
+  #header1 {
+    display: flex;
+    margin: 1px;
+    
+  }
+  .buyers__person1 {
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+   
+    
+  
+    
+  }
+  
+  .buyers__person2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+   
+  }
+  .buyers__person3 {
+    margin-top: 35px;
+    margin-bottom: -20px;
+  
+    
+  }
+  .buyers__person1,
+  .buyers__person2,
+  .buyers__person3 {
+    width: 33%;
+    border: 1px solid rgb(177, 15, 195);
+    margin-left: 25px;
+    margin-right:10px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color:  #8d56e6;
+    color: white;
+
+    
+    
+  }
+  .buyers__person1--review,
+  .buyers__person2--review,
+  .buyers__person3--review {
+    opacity: 50%;
+    color: #f3f2f5;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
