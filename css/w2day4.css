@@ -1,197 +1,154 @@
-.rating {
-  display: flex;
-  padding: 0px;
-  margin-left: 20px;
-  font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-h1 {
-  font-size: 40px;
-  font-style: italic;
-  color: #5e1643;
-}
-#product_description {
-  font-size: 15px;
-  color: #918594;
-}
-.rating__users {
-  padding-left: 0px;
-  margin-left: 300px;
+.logo {
+  background-color: rgb(68, 66, 66);
+  height: 30px;
+  text-align: center;
 }
 
-.rating__users--review1,
-.rating__users--review2,
-.rating__users--review3 {
-  border: 1px solid #f5f1f6;
-  border-radius: 5%;
-  background-color: #f7edf9;
-  padding: 1px;
-
-  margin: 5px;
-  color: #681549;
-  font-weight: bold;
-  font-size: 10px;
-  display: flex;
-  margin-left: 100px;
-  align-items: center;
-  gap: 10px;
-}
-
-.rating__users--review2 {
-  position: relative;
-  top: 2px;
-  left: 20px;
-}
-.rating__users--review3 {
-  position: relative;
-  top: 2px;
-  left: 40px;
-}
-.checked {
-  color: orange;
-}
-
-.buyers {
-  display: flex;
-  padding-top: 0px;
-  margin-left: 10px;
-}
-
-h4 {
-  color: #ddd2f5;
-}
-#header1 {
-  display: flex;
-  margin: 1px;
-}
-.buyers__person1 {
-  margin-bottom: 35px;
-  padding-bottom: 15px;
-}
-
-.buyers__person2 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-.buyers__person3 {
-  margin-top: 35px;
-}
-.buyers__person1,
-.buyers__person2,
-.buyers__person3 {
-  width: 33%;
-  border: 1px solid rgb(177, 15, 195);
-  margin-left: 25px;
-  margin-right: 10px;
-  padding: 25px;
-  border-radius: 10px;
-  background-color: #40122f;
+ul > li {
+  list-style: none;
   color: white;
+  font-size: 15px;
+  line-height: 1.2105263158;
+  font-weight: 100;
+  letter-spacing: 0.012em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  opacity: 70%;
 }
-.buyers__person1--review,
-.buyers__person2--review,
-.buyers__person3--review {
-  color: #fdfcff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+ul {
+  display: flex;
+  flex-direction: row;
 }
-
-img {
-  width: 50px;
-  height: 50px;
-  border-color: black;
-  border-radius: 50%;
-  margin-right: 20px;
+.apple__logo {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
-
-@media screen and (max-width: 600px) {
-  body {
-    background-color: rgb(196, 196, 243);
-  }
-  .rating__products {
-    font-size: small;
-    text-align: center;
-    margin-right: 45px;
-  }
-  .rating {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .rating__users {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .rating__users--review1 {
-    margin-right: 470px;
-    padding: 0px;
-    font-size: 10px;
-    width: 300px;
-  }
-  .rating__users--review2 {
-    margin-right: 510px;
-    width: 300px;
-    font-size: 10px;
-  }
-  .rating__users--review3 {
-    margin-right: 550px;
-    font-size: 10px;
-    width: 300px;
-  }
-  .buyers {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-right: 0px;
-  }
-  .buyers__person1 {
-    margin-top: 25px;
-    width: 300px;
-  }
-  .buyers__person2 {
-    margin-top: 25px;
-    width: 300px;
-  }
-
-  .buyers__person3 {
-    margin-top: 25px;
-    width: 300px;
-  }
+.apple__pro {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
 }
-@media screen and (max-width: 320px) {
-  .rating__users {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .rating__users--review1 {
-    margin-right: 420px;
-    padding: 0px;
-    font-size: 10px;
-    width: 300px;
-  }
-  .rating__users--review2 {
-    margin-right: 460px;
-    width: 300px;
-    font-size: 10px;
-  }
-  .rating__users--review3 {
-    margin-right: 500px;
-    font-size: 10px;
-    width: 300px;
-  }
-  .buyers__person1 {
-    margin-top: 25px;
-    width: 200px;
-  }
-  .buyers__person2 {
-    margin-top: 25px;
-    width: 200px;
-  }
-
-  .buyers__person3 {
-    margin-top: 25px;
-    width: 200px;
-  }
+.apple__iphone14 {
+  text-align: center;
+  color: black;
+  font-size: 20px;
 }
-
+a,
+.link {
+  color: #06c;
+  letter-spacing: inherit;
+}
+.iphone__products {
+  display: flex;
+  justify-content: space-between;
+}
+.iphone__products--watch {
+  text-align: center;
+  color: white;
+  width: 680px;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: black;
+  font-style: normal;
+}
+.iphone__products--ipad {
+  text-align: center;
+  width: 630px;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  font-style: normal;
+}
+.iphone__products2 {
+  display: flex;
+  justify-content: space-between;
+}
+.iphone__products2--mac {
+  text-align: center;
+  width: 680px;
+  color: #fff;
+  color: white;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: black;
+  font-style: normal;
+}
+.iphone__products2--colorwatch {
+  text-align: center;
+  margin-right: 100px;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 29, 31);
+  font-style: normal;
+  object-position: center;
+}
+.iphone__products3 {
+  display: flex;
+  justify-content: space-between;
+}
+.iphone__products3--ipadpro {
+  text-align: center;
+  height: 540px;
+  width: 680px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-style: normal;
+}
+.iphone__products3--ipod {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: black;
+  color: white;
+  font-style: normal;
+}
+footer {
+  font-size: 13px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  opacity: 70%;
+}
+#list1 {
+  color: black;
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+}
+.apple__footer {
+  display: flex;
+  flex-direction: column;
+}
