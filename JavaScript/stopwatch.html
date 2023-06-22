@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stopwatch.css" />
+    <title>stop watch</title>
+  </head>
+  <body>
+    <main>
+      <div class="time">
+        <div id="minute">00</div>
+        <div id="second">00</div>
+        <div id="milli_second">00</div>
+      </div>
+      <div class="control">
+        <button onclick="start()" id="start">Start</button>
+        <button onclick="stop()" id="stop">Stop</button>
+        <button onclick="reset()" id="reset">Reset</button>
+      </div>
+      <h1>Lap</h1>
+
+      <div id="laps">
+        <p id="lapRecord"></p>
+      </div>
+    </main>
+    <script>
+      let timer = 0;
+      let timerInterval;
+      let ms = document.getElementById("milli_second");
+      let second = document.getElementById("second");
+      let minute = document.getElementById("minute");
+
+      function start() {
+        timerInterval = setInterval(function () {
+          timer += 1 / 60;
+
+          let msVal = Math.floor((timer - Math.floor(timer)) * 100);
+          let secondVal = Math.floor(timer) - Math.floor(timer / 60) * 60;
+          let minuteVal = Math.floor(timer / 60);
+
+          ms.textContent = msVal < 10 ? "0" + msVal.toString() : msVal;
+          second.textContent =
+            secondVal < 10 ? "0" + secondVal.toString() : secondVal;
+          minute.textContent =
+            minuteVal < 10 ? "0" + minuteVal.toString() : minuteVal;
+        }, 1000 / 60);
+      }
+
+      function stop() {
+        clearInterval(timerInterval);
+        lapNow =
+          minute.textContent +
+          " : " +
+          second.textContent +
+          " : " +
+          ms.textContent +
+          "<br/>";
+        laps = document.getElementById("lapRecord").innerHTML + lapNow;
+
+        document.getElementById("lapRecord").innerHTML = laps;
+      }
+
+      function reset() {
+        // stop();
+        timer = 0;
+        ms.textContent = "00";
+        second.textContent = "00";
+        minute.textContent = "00";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+h1{
+    font-size: 50px;
+    border:1px solid blue;
+    color:blueviolet;
+    background-color: azure;
+}
+body{
+    background-color: rgb(183, 206, 249);
+    text-align: center;
+}
+input[type=text]{
+    border-color: rgb(236, 236, 21);
+    height: 30px;
+}
+input[type=number]{
+    border-color: chocolate;
+    height: 30px;
+}
+button{
+    background-color: rgb(235, 147, 115);
+    height: 30px;
+}

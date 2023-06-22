@@ -1,0 +1,53 @@
+.time {
+  width: 500px;
+  margin: 100px auto;
+  padding: 60px 50px 100px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 40px;
+  border: 3px solid #f7d7d7;
+}
+h1 {
+  color: teal;
+}
+.time div {
+  display: inline-block;
+  width: 50px;
+  margin: 3px;
+  padding: 10px;
+  font-weight: bold;
+}
+.control {
+  text-align: center;
+}
+
+.control button {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+#start {
+  background-color: rgb(58, 180, 58);
+}
+#stop {
+  background-color: rgb(221, 112, 112);
+}
+#reset {
+  background-color: rgb(101, 101, 209);
+}
+#lap {
+  background-color: crimson;
+}
+#start:hover,
+#stop:hover,
+#reset:hover,
+#lap:hover {
+  background-color: #413f3f;
+  color: #e0e0e0;
+  border-radius: 40px;
+}

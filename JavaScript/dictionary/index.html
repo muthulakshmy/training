@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="dict.css">
+    
+    
+</head>
+<body>
+    <section id="dictionary">
+    <header>
+           <img src="book.svg" id="book">
+           <img src="toggle.svg" id="toggle">
+           <img src="icon-moon.svg" id="moon">
+       
+    </header> 
+    <main>
+        <section >
+            <input type="text" id="text" >
+            <img src="icons8-search-30.png" id="image">
+            <div class="result" id="result"></div>
+           
+
+        </section>
+    </main>
+    </section>   
+      
+    <script src="app.js"></script>
+</body>
+
+</html>
+<script>
+     var image = document.querySelector('#image');
+     var word=document.getElementById("text");
+    image.addEventListener('click', function(data) {
+        let url=`https://api.dictionaryapi.dev/api/v2/entries/en/${word.value}`
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+                console.log(data)
+                result.innerHTML= `
+             <div class="word">
+                     <h3>${word.value}</h3>
+                     <p>/${data[0].phonetic}/</p>  
+                     <button onclick="playSound()" id="play" onclick=play()>
+                        
+                        <img src="icon-play.svg">
+                     </button>
+                 </div>
+                 <div class="details">
+                    
+                     
+                     <h1>${data[0].meanings[0].partOfSpeech}</h1>
+                     <hr>
+                    <h5>Meaning</h5>
+                    <ul>
+                    <li>${data[0].meanings[0].definitions[0].definition}</li>
+                    <li>${data[0].meanings[0].definitions[1].definition}</li>
+                    <li>${data[0].meanings[0].definitions[2].definition}</li>
+                    </ul>
+                     
+                 
+                  Synonyms :   ${data[0].meanings[0].synonyms}
+                 <h1>${data[0].meanings[1].partOfSpeech}</h1><hr>
+                 <p class="word-meaning">
+                    <h5>Meaning</h5>
+                    <ul>
+                        <li>${data[0].meanings[1].definitions[0].definition}</li>
+                    </ul>
+                 </p>
+                 <p class="word-example">
+                     ${data[0].meanings[0].definitions[0].example || ""}
+                 </p>
+                 
+                source : <a href="https://www.wikipedia.org/${word.value}">https://www.wikipedia.org/${word.value}<img src="icon-new-window.svg"></a>
+                 </div>`;
+                 
+                });
+             
+            });
+//  const play = async () => {
+//     try {
+
+//       const response = await axios.get({
+//         url: `https://api.dictionaryapi.dev/media/pronunciations/en/${word.value}-us.mp3`,
+//         method: 'GET',
+//         responseType: 'blob',
+//       });
+
+//       // This will create a Local URL that can be used on an audio source
+//       const audioUrl = window.URL.createObjectURL(new Blob([response.data]));
+     
+
+      
+//     } catch (error) {}
+//   };
+            
+            
+</script>

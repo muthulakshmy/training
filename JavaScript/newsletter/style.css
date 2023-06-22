@@ -1,0 +1,165 @@
+
+body{
+    /* padding-top: 50px;
+    padding-right: 300px;
+    padding-left: 300px; */
+    background-color:hsl(235, 18%, 26%); 
+    width:fit-content;  
+    padding: 20px;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+}
+ul>li{
+    list-style-type: none;
+    text-align: left;
+    
+}
+ul{
+    list-style-image: url("icon-list.svg");
+}
+.newsletter{
+    display :flex;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 23%;    
+}
+#newsletter__caption{
+    font-size: 16px;
+    font-family: Roboto;
+    width:370px;
+    /* text-align: left; */
+}
+input[type="text"]{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    width: 300px;
+}
+#btn{
+    background-color:hsl(235, 18%, 26%);
+    color:white;
+    font-family: Roboto;
+    border:1px solid hsl(235, 18%, 26%) ;
+    height: 35px;
+    border-radius: 5px;
+    width: 310px;
+
+}
+
+img{
+    /* width:400px;
+    height: 400px; */
+    /* width: min-content; */
+    width: 250px;
+    /* height: 350px; */
+}
+.newsletter__thanks {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+}
+.newsletter__thanks #backToPage{
+    width: 300px;
+    height: 30px;
+    background-color:hsl(235, 18%, 26%);
+    color:white;
+    font-family: Roboto;
+    border:1px solid hsl(235, 18%, 26%) ;
+    border-radius: 5px;
+}
+.newsletter__thanks h1{
+    font-size: 30px;
+    font-family: roboto;
+}
+.newsletter__thanks--image{
+    width: 50px;
+    height: 50px;
+
+}
+.hide{
+    display: none;
+}
+#wrongStatement{
+    color:red;
+    padding-left: 50px;
+    display:none
+}
+
+@media screen and (max-width:934px) {
+   
+   .newsletter{
+    width: 600px;
+    position: absolute;
+    top:7%;
+    left:15%;
+   }
+    
+}
+
+@media screen and (max-width:857px) {
+    .newsletter{
+        position: absolute;
+        top:5%;
+        left:10%;
+       }
+    
+}
+
+@media screen and (max-width:720px) {
+    .newsletter{
+        position: absolute;
+        top:5%;
+        left:5%;
+    }
+    .newsletter{
+        
+    }
+    img{
+        
+    }
+    
+}
+
+
+@media screen and (max-width:649px) {
+    .newsletter{
+        /* position: absolute;
+        bottom: 50%;
+        right: 50%; */
+        width: 500px;
+        height: 400px;
+    }
+ h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    ul>li{
+        font-size: 10px;
+    }
+    form{
+        font-size: 10px;
+    }
+    
+   
+ img{
+        width: 200px;
+        height: 250px;
+    }
+    
+}

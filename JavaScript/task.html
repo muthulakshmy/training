@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="text">
+        <input type="text" placeholder="enter task" id="task" />
+        <b1 />
+        <input type="button" id="button" value="add task" onclick="addTask()" />
+      </section>
+      <section class="list">
+        <ul id="mylist"></ul>
+      </section>
+    </main>
+
+    <script>
+      let taskInput = document.getElementById("task");
+      let addTaskbtn = document.getElementById("button");
+
+      function stimulateWebApi(task) {
+        return new Promise(function (resolve, reject) {
+          loader(true);
+          setTimeout(function () {
+            if (task.length <= 10) {
+              resolve(task);
+            } else {
+              reject("task length must less than 10");
+            }
+            loader(false);
+          }, 2000);
+        });
+      }
+      function addTask() {
+        let task = taskInput.value;
+        stimulateWebApi(task)
+          .then(function (response) {
+            addTaskResponse(response);
+            clearInput();
+          })
+          .catch(function (error) {
+            alert(error);
+          });
+      }
+      function addTaskResponse(task) {
+        let ul = document.getElementById("mylist");
+        let li = document.createElement("li");
+        li.textContent = task;
+        ul.appendChild(li);
+      }
+
+      function clearInput() {
+        taskInput.value = " ";
+      }
+      function loader(isLoading) {
+        if (isLoading) {
+          addTaskbtn.value = "Loading...";
+          addTaskbtn.disabled = true;
+        } else {
+          addTaskbtn.value = "Add Task";
+          addTaskbtn.disabled = false;
+        }
+      }
+    </script>
+  </body>
+</html>
